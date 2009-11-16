@@ -1,15 +1,16 @@
+drop database if exists goabottling;
+create database goabottling;
+use goabottling;
 
-Database Design Document
-
-
-Create table warehouse_productivity ( 
-date date not null, 
-type_work Enum("Supervisor","Operator","Driver","Loader") not null, 
-hours int not null, 
-no_workmen int not null, 
-total_cases_loaded int not null,
-primary key (date,type_work) );
-
+create table warehouse_productivity 
+( 
+	date date not null, 
+	work_type enum("supervisor","operator","driver","loader") not null, 
+	hours int unsigned not null, 
+	no_workmen int unsigned not null, 
+	total_cases_loaded int unsigned not null,
+	primary key (date,work_type) 
+);
 
 Create table production_productivity (
 date date not null,
