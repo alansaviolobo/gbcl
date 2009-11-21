@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.technotrix.pepsi.domainObjects">
+    <class name="WarehouseProductivity" table="warehouse_productivity">
+        <id name="id" column="id">
+            <generator class="increment"/>
+        </id>
+        <property name="date" column="date" />
+        <property name="supervisorHours" column="supervisor_hours"/>
+        <property name="supervisorCount" column="supervisor_count"/>
+        <property name="operatorHours" column="operator_hours"/>
+        <property name="operatorCount" column="operator_count"/>
+        <property name="driverHours" column="driver_hours"/>
+        <property name="driverCount" column="driver_count"/>
+        <property name="loaderHours" column="loader_hours"/>
+        <property name="loaderCount" column="loader_count"/>
+        <property name="casesLoaded" column="cases_loaded"/>
+        <property name="casesPerEmployeeHours" column="cases_per_employee_hour"/>
+    </class>
+
+</hibernate-mapping>

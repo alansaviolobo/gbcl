@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry path="src" kind="src"/>
+	<classpathentry path="org.eclipse.jdt.launching.JRE_CONTAINER" kind="con"/>
+	<classpathentry path="E:/Projects/ExcelReader/ExcelReder/lib/poi-3.0.1-FINAL-20070705.jar" kind="lib"/>
+	<classpathentry path="bin" kind="output"/>
+</classpath>
