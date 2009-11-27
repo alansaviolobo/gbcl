@@ -5,7 +5,7 @@ import java.util.Date;
 public class WarehouseProductivity {
     private int id;
     private Date date;
-    private float casesPerEmployeeHours;
+    private float casesPerEmployeeHour;
 
     public Date getDate() {
         return date;
@@ -15,12 +15,12 @@ public class WarehouseProductivity {
         this.date = date;
     }
 
-    public void setCasesPerEmployeeHours(float casesPerEmployeeHours) {
-        this.casesPerEmployeeHours = casesPerEmployeeHours;
+    public void setCasesPerEmployeeHour(float casesPerEmployeeHours) {
+        this.casesPerEmployeeHour = casesPerEmployeeHours;
     }
 
-    public float getCasesPerEmployeeHours() {
-        return casesPerEmployeeHours;
+    public float getCasesPerEmployeeHour() {
+        return casesPerEmployeeHour;
     }
 
     public int getId() {

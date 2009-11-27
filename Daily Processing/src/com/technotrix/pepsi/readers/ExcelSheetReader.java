@@ -6,14 +6,13 @@ import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Date;
 
 public class ExcelSheetReader implements SheetReader {
     private HSSFSheet sheet;
 
-    public ExcelSheetReader(String fileName, String sheetName) throws FileNotFoundException, IOException {
+    public ExcelSheetReader(String fileName, String sheetName) throws IOException {
         POIFSFileSystem fileSystem =
                 new POIFSFileSystem(new FileInputStream(fileName));
         HSSFWorkbook workbook = new HSSFWorkbook(fileSystem);

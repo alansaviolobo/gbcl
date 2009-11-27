@@ -6,8 +6,7 @@ import java.text.ParseException;
 
 public class LineProductivityReader extends BaseParser {
     private static final short A = 0;
-    private static final short E = 4;
-    private static final short F = 5;
+    private static final short C = 2;
 
     public LineProductivityReader(SheetReader sheetReader) {
         super(sheetReader);
@@ -15,11 +14,9 @@ public class LineProductivityReader extends BaseParser {
 
     public LineProductivity parse() throws ParseException
     {
-        float numerator = getFloatValueForCell(9, F) * 100;
-        float denominator = getFloatValueForCell(9, E);
         LineProductivity lineProductivity = new LineProductivity();
-        lineProductivity.setDate(getDateValueForCell(12, A));
-        lineProductivity.setLineProductivity(numerator/denominator);
+        lineProductivity.setDate(getDateValueForCell(4, C));
+        lineProductivity.setLineProductivity(getFloatValueForCell(0, A));
         return lineProductivity;
     }
 

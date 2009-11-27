@@ -5,8 +5,8 @@ import com.technotrix.pepsi.readers.SheetReader;
 import java.text.ParseException;
 
 public class WarehouseBreakagesReader extends BaseParser{
+    private static final short A = 0;
     private static final short B = 1;
-    private static final short G = 6;
 
     public WarehouseBreakagesReader(SheetReader sheetReader) {
         super(sheetReader);
@@ -15,8 +15,8 @@ public class WarehouseBreakagesReader extends BaseParser{
     public WarehouseBreakages parse() throws ParseException
     {
         WarehouseBreakages warehouseBreakages = new WarehouseBreakages();
-        warehouseBreakages.setDate(getDateValueForCell(G, B));
-        warehouseBreakages.setTotalRGB(getFloatValueForCell(30, G));
+        warehouseBreakages.setDate(getDateValueForCell(10, B));
+        warehouseBreakages.setTotalRGB(getFloatValueForCell(0, A));
         return warehouseBreakages;
     }
 }
