@@ -6,6 +6,7 @@ import java.text.ParseException;
 
 public class ProductionProductivityReader extends BaseParser {
     private static final short A = 0;
+    private static final short B = 1;
     private static final short C = 2;
 
     public ProductionProductivityReader(SheetReader sheetReader) {
@@ -16,6 +17,7 @@ public class ProductionProductivityReader extends BaseParser {
     {
         ProductionProductivity productionProductivity = new ProductionProductivity();
         productionProductivity.setDate(getDateValueForCell(3, C));
+        productionProductivity.setGrossProduction(getFloatValueForCell(8, B));
         productionProductivity.setCasesPerEmployeeHour(getFloatValueForCell(0, A));
         return productionProductivity;
     }

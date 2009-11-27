@@ -4,15 +4,13 @@ import java.util.Date;
 
 public class PlantProductivity {
     private Date date;
-    private LineProductivity lineProductivity;
+    private ProductionProductivity productionProductivity;
     private TotalPaidHours totalPaidHours;
 
-    public PlantProductivity(Date date) {
-        this.date = date;
-        lineProductivity = new LineProductivity();
-        lineProductivity.setDate(date);
-        totalPaidHours = new TotalPaidHours();
-        totalPaidHours.setDate(date);
+    public PlantProductivity(ProductionProductivity productionProductivity, TotalPaidHours totalPaidHours) {
+        this.date = productionProductivity.getDate();
+        this.productionProductivity = productionProductivity;
+        this.totalPaidHours = totalPaidHours;
     }
 
     public Date getDate() {
@@ -25,6 +23,6 @@ public class PlantProductivity {
 
     public float getProductionProductivity()
     {
-        return lineProductivity.getLineProductivity()/totalPaidHours.getTotalPaidHours();
+        return productionProductivity.getGrossProduction()/totalPaidHours.getTotalPaidHours();
     }
 }

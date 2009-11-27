@@ -40,7 +40,7 @@ public class StartPoint {
             LineProductivity lineProductivity = lineProductivityReader.parse();
             session.save(lineProductivity);
 
-            excelSheetReader = new ExcelSheetReader(path + "total_paid_hours.xls", "total_paid_hrs");
+            excelSheetReader = new ExcelSheetReader(path + "total_paid_hrs.xls", "total_paid_hrs");
             TotalPaidHoursReader totalPaidHoursReader = new TotalPaidHoursReader(excelSheetReader);
             TotalPaidHours totalPaidHours = totalPaidHoursReader.parse();
             session.save(totalPaidHours);
@@ -53,9 +53,9 @@ public class StartPoint {
 //            KeyPerformanceMeasure keyPerformanceMeasure = new KeyPerformanceMeasure();
 //            KeyPerformanceMeasureWriter keyPerformanceMeasureWriter = new KeyPerformanceMeasureWriter(keyPerformanceMeasure);
 //            keyPerformanceMeasureWriter.save();
-            PlantProductivity plantProductivity = new PlantProductivity(cal.getTime());
+            PlantProductivity plantProductivity = new PlantProductivity(productionProductivity,  totalPaidHours);
 
-            int offset = 3;
+            int offset = 4;
             if(sdf.format(cal.getTime()).equals("Mon")) offset+=1;
             else if (sdf.format(cal.getTime()).equals("Tue")) offset+=2;
             else if (sdf.format(cal.getTime()).equals("Wed")) offset+=3;
@@ -65,7 +65,7 @@ public class StartPoint {
             else if(sdf.format(cal.getTime()).equals("Sun")) offset+=7;
 
             ExcelSheetWriter excelSheetWriter = new ExcelSheetWriter(path + "goabottlings_kpm.xls", "Sheet1");
-            excelSheetWriter.setDateCellValue(2, 2, plantProductivity.getDate());
+            excelSheetWriter.setDateCellValue(3, 2, plantProductivity.getDate());
             excelSheetWriter.setFloatCellValue(36, offset, plantProductivity.getProductionProductivity());
             excelSheetWriter.setFloatCellValue(37, offset, lineProductivity.getLineProductivity());
             excelSheetWriter.setFloatCellValue(38, offset, warehouseProductivity.getCasesPerEmployeeHour());

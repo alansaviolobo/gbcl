@@ -5,10 +5,19 @@ import java.util.Date;
 public class ProductionProductivity {
     private int id;
     private Date date;
+    private float grossProduction;
     private float casesPerEmployeeHour;
 
     public Date getDate() {
         return date;
+    }
+
+    public float getGrossProduction() {
+        return grossProduction;
+    }
+
+    public void setGrossProduction(float grossProduction) {
+        this.grossProduction = grossProduction;
     }
 
     public void setDate(Date date) {

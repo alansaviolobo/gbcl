@@ -10,6 +10,7 @@
         </id>
         <property name="date" column="date" />
         <property name="casesPerEmployeeHour" column="cases_per_employee_hour"/>
+        <property name="grossProduction" column="gross_production"/>
     </class>
 
 </hibernate-mapping>

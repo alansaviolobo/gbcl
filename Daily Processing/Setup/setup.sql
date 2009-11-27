@@ -15,6 +15,7 @@ create table warehouse_productivity
 create table production_productivity(
     id int unsigned not null,
     date date not null,
+    gross_production float not null,
     cases_per_employee_hour float not null,
     primary key (id),
     unique key (date)

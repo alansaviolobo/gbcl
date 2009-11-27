@@ -5,8 +5,8 @@ import com.technotrix.pepsi.readers.SheetReader;
 import java.text.ParseException;
 
 public class TotalPaidHoursReader extends BaseParser {
-    private static final short B = 0;
-    private static final short G = 6;
+    private static final short A = 0;
+    private static final short C = 2;
 
     public TotalPaidHoursReader(SheetReader sheetReader) {
         super(sheetReader);
@@ -15,8 +15,8 @@ public class TotalPaidHoursReader extends BaseParser {
     public TotalPaidHours parse() throws ParseException
     {
         TotalPaidHours totalPaidHours = new TotalPaidHours();
-        totalPaidHours.setDate(getDateValueForCell(3, B));
-        totalPaidHours.setTotalPaidHours(getFloatValueForCell(22, G));
+        totalPaidHours.setDate(getDateValueForCell(4, C));
+        totalPaidHours.setTotalPaidHours(getFloatValueForCell(0, A));
         return totalPaidHours;
     }
 
