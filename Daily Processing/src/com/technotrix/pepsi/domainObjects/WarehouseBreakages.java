@@ -2,13 +2,6 @@ package com.technotrix.pepsi.domainObjects;
 
 import java.util.Date;
 
-/**
- * Created by IntelliJ IDEA.
- * User: Administrator
- * Date: Nov 21, 2009
- * Time: 6:27:37 PM
- * To change this template use File | Settings | File Templates.
- */
 public class WarehouseBreakages {
      private int id;
     private Date date;

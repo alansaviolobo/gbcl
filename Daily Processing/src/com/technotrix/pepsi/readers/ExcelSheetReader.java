@@ -10,13 +10,6 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Date;
 
-/**
- * Created by IntelliJ IDEA.
- * User: Administrator
- * Date: Nov 21, 2009
- * Time: 3:24:25 PM
- * To change this template use File | Settings | File Templates.
- */
 public class ExcelSheetReader implements SheetReader {
     private HSSFSheet sheet;
 

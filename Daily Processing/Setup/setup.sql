@@ -1,25 +1,50 @@
 drop database if exists goabottling;
 create database goabottling;
 use goabottling;
+grant all privileges on goabottling.* to 'goabottling'@'localhost' identified by 'goabottling'; 
 
 create table warehouse_productivity 
 ( 
 	id int unsigned not null, 
 	date date not null, 
-	supervisor_hours int unsigned not null,
-	supervisor_count int unsigned not null,
-	operator_hours int unsigned not null,
-	operator_count int unsigned not null,
-	driver_hours int unsigned not null,
-	driver_count int unsigned not null,
-	loader_hours int unsigned not null,
-	loader_count int unsigned not null,
-	cases_loaded int unsigned not null,
 	cases_per_employee_hour float unsigned not null,
 	primary key (id),
 	unique key (date)
 );
 
+create table production_productivity(
+    id int unsigned not null,
+    date date not null,
+    cases_per_employee_hour float not null,
+    primary key (id),
+    unique key (date)
+);
+
+create table line_productivity(
+    id int unsigned not null,
+    date date not null,
+    line_productivity float not null,
+    primary key (id),
+    unique key (date)
+);
+
+create table total_paid_hours(
+    id int unsigned not null,
+    date date not null,
+    total_paid_hours int not null,
+    primary key (id),
+    unique key (date)
+);
+
+create table filler_downtime(
+    id int unsigned not null,
+    date date not null,
+    filler_downtime float not null,
+    primary key (id),
+    unique key (date)
+);
+
+------------------------------------------------------------------------------------------------------------------------
 create table warehouse_breakages(
     id int unsigned not null,
     date date not null,
@@ -39,8 +64,17 @@ id int unsigned not null auto_increment,
 name varchar(255) not null
 primary key (id));
 
-
-
+create table warehouse_productivity (
+	supervisor_hours int unsigned not null,
+	supervisor_count int unsigned not null,
+	operator_hours int unsigned not null,
+	operator_count int unsigned not null,
+	driver_hours int unsigned not null,
+	driver_count int unsigned not null,
+	loader_hours int unsigned not null,
+	loader_count int unsigned not null,
+	cases_loaded int unsigned not null,
+);
 Create table Lineproductivity_fillerdowntime (
 date date not null,
 flavour_pack int unsigned not null,
