@@ -2,13 +2,10 @@
   <artifact type="jar" build-on-make="true" name="Prepare KPM">
     <output-path>$PROJECT_DIR$/out/artifacts/Prepare_KPM</output-path>
     <root id="archive" name="Prepare_KPM.jar">
-      <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
-      </element>
-      <element id="library" level="project" name="libraries" />
-      <element id="library" level="project" name="mysql" />
       <element id="module-output" name="Daily Processing" />
-      <element id="dir-copy" path="$PROJECT_DIR$/out/production/Daily Processing/com/technotrix/pepsi" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" />
+      </element>
     </root>
   </artifact>
 </component>
