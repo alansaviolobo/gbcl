@@ -2,9 +2,12 @@
   <artifact build-on-make="true" name="Output">
     <output-path>$PROJECT_DIR$/out/artifacts/Output</output-path>
     <root id="root">
-      <element id="dir-copy" path="$PROJECT_DIR$/lib" />
       <element id="artifact" artifact-name="Prepare KPM" />
       <element id="file-copy" path="$PROJECT_DIR$/../Excel Templates/goabottlings_kpm.xls" />
+      <element id="file-copy" path="$PROJECT_DIR$/Setup/generate report.bat" />
+      <element id="file-copy" path="$PROJECT_DIR$/Setup/setup.sql" />
+      <element id="library" level="project" name="libraries" />
+      <element id="dir-copy" path="$PROJECT_DIR$/lib" />
     </root>
   </artifact>
 </component>
