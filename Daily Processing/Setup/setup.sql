@@ -1,7 +1,7 @@
 drop database if exists goabottling;
 create database goabottling;
 use goabottling;
-grant all privileges on goabottling.* to 'goabottling'@'localhost' identified by 'goabottling'; 
+grant all privileges on goabottling.* to 'goabottling'@'%' identified by 'goabottling';
 
 create table warehouse_productivity 
 ( 
