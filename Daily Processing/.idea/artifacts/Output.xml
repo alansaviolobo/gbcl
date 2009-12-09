@@ -4,6 +4,7 @@
     <root id="root">
       <element id="dir-copy" path="$PROJECT_DIR$/lib" />
       <element id="artifact" artifact-name="Prepare KPM" />
+      <element id="file-copy" path="$PROJECT_DIR$/../Excel Templates/goabottlings_kpm.xls" />
     </root>
   </artifact>
 </component>
