@@ -17,9 +17,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-
 public class StartPoint {
-
     public static void main(String[] args) {
         try {
             Session session = HibernateUtil.getSessionFactory().openSession();
@@ -78,10 +76,12 @@ public class StartPoint {
             excelSheetWriter.setStringCellValue(3, 2, sdf.format(cal.getTime()));
             for (int count = offset; count > 3; count--, cal.add(Calendar.DATE, -1))
             {
+                try {
                 lineProductivity = (LineProductivity) session.createQuery("from LineProductivity where date = :now").setDate("now", cal.getTime()).list().get(0);
                 warehouseProductivity = (WarehouseProductivity) session.createQuery("from WarehouseProductivity where date = :now").setDate("now", cal.getTime()).list().get(0);
                 fillerDowntime = (FillerDowntime) session.createQuery("from FillerDowntime where date = :now").setDate("now", cal.getTime()).list().get(0);
                 productionProductivity = (ProductionProductivity) session.createQuery("from ProductionProductivity where date = :now").setDate("now", cal.getTime()).list().get(0);
+                totalPaidHours = (TotalPaidHours) session.createQuery("from TotalPaidHours where date = :now").setDate("now", cal.getTime()).list().get(0);
                 plantProductivity = new PlantProductivity(productionProductivity, totalPaidHours);
 
                 excelSheetWriter.setFloatCellValue(36, count, plantProductivity.getProductionProductivity());
@@ -89,6 +89,7 @@ public class StartPoint {
                 excelSheetWriter.setFloatCellValue(38, count, warehouseProductivity.getCasesPerEmployeeHour());
                 excelSheetWriter.setFloatCellValue(39, count, fillerDowntime.getFillerDowntime());
                 excelSheetWriter.setFloatCellValue(40, count, productionProductivity.getCasesPerEmployeeHour());
+                } catch (Exception e) {}
             }
             cal.set(Calendar.DATE, 0);
             excelSheetWriter.save();
