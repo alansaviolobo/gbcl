@@ -27,7 +27,7 @@ public class StartPoint {
             Calendar cal = Calendar.getInstance();
             cal.add(Calendar.DATE, -1);
             sdf = new SimpleDateFormat("/yy/MMM/dd/");
-            String path = "http://192.168.1.4:8080/alfresco/webdav/User%20homes/mnwfiles" + sdf.format(cal.getTime());
+            String path = "http://192.168.1.110:8080/alfresco/webdav/User%20homes/mnwfiles" + sdf.format(cal.getTime());
             String username = "vandana", password= "vandana", tempPath;
 
             tempPath = downloadFile(new URI(path + "warehouse_productivity.xls"), username, password);
