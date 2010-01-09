@@ -8,6 +8,7 @@
       <element id="file-copy" path="$PROJECT_DIR$/Setup/setup.sql" />
       <element id="library" level="project" name="libraries" />
       <element id="dir-copy" path="$PROJECT_DIR$/lib" />
+      <element id="file-copy" path="$PROJECT_DIR$/Setup/logo.png" />
     </root>
   </artifact>
 </component>
