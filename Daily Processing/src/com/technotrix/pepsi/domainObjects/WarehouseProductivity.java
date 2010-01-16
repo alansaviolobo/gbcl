@@ -7,6 +7,14 @@ public class WarehouseProductivity {
     private Date date;
     private float casesPerEmployeeHour;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public Date getDate() {
         return date;
     }
@@ -15,19 +23,11 @@ public class WarehouseProductivity {
         this.date = date;
     }
 
-    public void setCasesPerEmployeeHour(float casesPerEmployeeHours) {
-        this.casesPerEmployeeHour = casesPerEmployeeHours;
-    }
-
     public float getCasesPerEmployeeHour() {
         return casesPerEmployeeHour;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+    public void setCasesPerEmployeeHour(float casesPerEmployeeHour) {
+        this.casesPerEmployeeHour = casesPerEmployeeHour;
     }
 }

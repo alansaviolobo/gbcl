@@ -8,8 +8,20 @@ public class ProductionProductivity {
     private float grossProduction;
     private float casesPerEmployeeHour;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public Date getDate() {
         return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
     }
 
     public float getGrossProduction() {
@@ -20,23 +32,11 @@ public class ProductionProductivity {
         this.grossProduction = grossProduction;
     }
 
-    public void setDate(Date date) {
-        this.date = date;
-    }
-
-    public void setCasesPerEmployeeHour(float casesPerEmployeeHour) {
-        this.casesPerEmployeeHour = casesPerEmployeeHour;
-    }
-
     public float getCasesPerEmployeeHour() {
         return casesPerEmployeeHour;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+    public void setCasesPerEmployeeHour(float casesPerEmployeeHour) {
+        this.casesPerEmployeeHour = casesPerEmployeeHour;
     }
 }

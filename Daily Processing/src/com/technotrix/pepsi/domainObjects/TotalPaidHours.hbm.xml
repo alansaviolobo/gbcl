@@ -8,7 +8,7 @@
         <id name="id" column="id">
             <generator class="increment"/>
         </id>
-        <property name="date" column="date" />
+        <property name="date" column="date"/>
         <property name="totalPaidHours" column="total_paid_hours"/>
     </class>
 

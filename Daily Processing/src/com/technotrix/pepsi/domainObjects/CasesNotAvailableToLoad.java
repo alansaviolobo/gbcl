@@ -2,10 +2,10 @@ package com.technotrix.pepsi.domainObjects;
 
 import java.util.Date;
 
-public class TotalPaidHours {
+public class CasesNotAvailableToLoad {
     private int id;
     private Date date;
-    private float totalPaidHours;
+    private float casesNotAvailableToLoad;
 
     public int getId() {
         return id;
@@ -23,11 +23,11 @@ public class TotalPaidHours {
         this.date = date;
     }
 
-    public float getTotalPaidHours() {
-        return totalPaidHours;
+    public float getCasesNotAvailableToLoad() {
+        return casesNotAvailableToLoad;
     }
 
-    public void setTotalPaidHours(float totalPaidHours) {
-        this.totalPaidHours = totalPaidHours;
+    public void setCasesNotAvailableToLoad(float casesNotAvailableToLoad) {
+        this.casesNotAvailableToLoad = casesNotAvailableToLoad;
     }
 }

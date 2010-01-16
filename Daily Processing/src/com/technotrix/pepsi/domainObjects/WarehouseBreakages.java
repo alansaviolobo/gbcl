@@ -3,9 +3,9 @@ package com.technotrix.pepsi.domainObjects;
 import java.util.Date;
 
 public class WarehouseBreakages {
-     private int id;
+    private int id;
     private Date date;
-    private float totalRGB;
+    private float warehouseBreakages;
 
     public int getId() {
         return id;
@@ -23,11 +23,11 @@ public class WarehouseBreakages {
         this.date = date;
     }
 
-    public float getTotalRGB() {
-        return totalRGB;
+    public float getWarehouseBreakages() {
+        return warehouseBreakages;
     }
 
-    public void setTotalRGB(float totalRGB) {
-        this.totalRGB = totalRGB;
+    public void setWarehouseBreakages(float warehouseBreakages) {
+        this.warehouseBreakages = warehouseBreakages;
     }
 }

@@ -7,6 +7,14 @@ public class LineProductivity {
     private Date date;
     private float lineProductivity;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public Date getDate() {
         return date;
     }
@@ -15,19 +23,11 @@ public class LineProductivity {
         this.date = date;
     }
 
-    public void setLineProductivity(float lineProductivity) {
-        this.lineProductivity = lineProductivity;
-    }
-
     public float getLineProductivity() {
         return lineProductivity;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+    public void setLineProductivity(float lineProductivity) {
+        this.lineProductivity = lineProductivity;
     }
 }

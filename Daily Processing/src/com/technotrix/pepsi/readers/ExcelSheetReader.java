@@ -5,6 +5,7 @@ import org.apache.poi.hssf.usermodel.HSSFRow;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.poifs.filesystem.POIFSFileSystem;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.Date;
@@ -25,8 +26,7 @@ public class ExcelSheetReader implements SheetReader {
         return cell.toString();
     }
 
-    public Date getDateValue(int rowNumber, short column)
-    {
+    public Date getDateValue(int rowNumber, short column) {
         HSSFRow currentRow = sheet.getRow(rowNumber);
         HSSFCell cell = currentRow.getCell(column);
         return cell.getDateCellValue();

@@ -14,11 +14,21 @@
         <property name="current_session_context_class">thread</property>
         <property name="hibernate.show_sql">true</property>
 
+        <mapping resource="com/technotrix/pepsi/domainObjects/CasesNotAvailableToLoad.hbm.xml"/>
         <mapping resource="com/technotrix/pepsi/domainObjects/FillerDowntime.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/FinishedGoodsShrinkage.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/ForecastAccuracy.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/FurnaceOil.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/IngredientYieldLoss.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/InjuryFrequency.hbm.xml"/>
         <mapping resource="com/technotrix/pepsi/domainObjects/LineProductivity.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/LostTime.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/Power.hbm.xml"/>
         <mapping resource="com/technotrix/pepsi/domainObjects/ProductionProductivity.hbm.xml"/>
         <mapping resource="com/technotrix/pepsi/domainObjects/TotalPaidHours.hbm.xml"/>
         <mapping resource="com/technotrix/pepsi/domainObjects/WarehouseBreakages.hbm.xml"/>
         <mapping resource="com/technotrix/pepsi/domainObjects/WarehouseProductivity.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/Water.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/YeastLog.hbm.xml"/>
     </session-factory>
 </hibernate-configuration>

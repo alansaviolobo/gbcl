@@ -7,6 +7,14 @@ public class FillerDowntime {
     private Date date;
     private float fillerDowntime;
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
     public Date getDate() {
         return date;
     }
@@ -15,19 +23,11 @@ public class FillerDowntime {
         this.date = date;
     }
 
-    public void setFillerDowntime(float fillerDowntime) {
-        this.fillerDowntime = fillerDowntime;
-    }
-
     public float getFillerDowntime() {
         return fillerDowntime;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
+    public void setFillerDowntime(float fillerDowntime) {
+        this.fillerDowntime = fillerDowntime;
     }
 }

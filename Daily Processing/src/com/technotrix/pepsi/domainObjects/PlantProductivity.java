@@ -21,8 +21,7 @@ public class PlantProductivity {
         this.date = date;
     }
 
-    public float getProductionProductivity()
-    {
-        return productionProductivity.getGrossProduction()/totalPaidHours.getTotalPaidHours();
+    public float getProductionProductivity() {
+        return productionProductivity.getGrossProduction() / totalPaidHours.getTotalPaidHours();
     }
 }
