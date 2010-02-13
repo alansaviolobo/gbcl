@@ -5,7 +5,7 @@ import com.technotrix.pepsi.readers.SheetReader;
 
 import java.text.ParseException;
 
-public class WaterReader extends BaseParser{
+public class WaterReader extends BaseParser {
     public WaterReader(SheetReader sheetReader) {
         super(sheetReader);
     }

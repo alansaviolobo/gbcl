@@ -2,10 +2,10 @@ package com.technotrix.pepsi.domainObjects;
 
 import java.util.Date;
 
-public class Power {
+public class PackagingYieldLoss {
     private int id;
     private Date date;
-    private float power;
+    private float packagingYieldLoss;
 
     public int getId() {
         return id;
@@ -23,11 +23,11 @@ public class Power {
         this.date = date;
     }
 
-    public float getPower() {
-        return power;
+    public float getPackagingYieldLoss() {
+        return packagingYieldLoss;
     }
 
-    public void setPower(float power) {
-        this.power = power;
+    public void setPackagingYieldLoss(float packagingYieldLoss) {
+        this.packagingYieldLoss = packagingYieldLoss;
     }
 }

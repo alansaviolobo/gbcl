@@ -2,10 +2,10 @@ package com.technotrix.pepsi.domainObjects;
 
 import java.util.Date;
 
-public class WarehouseBreakages {
+public class CrownYield {
     private int id;
     private Date date;
-    private float warehouseBreakages;
+    private float crownYield;
 
     public int getId() {
         return id;
@@ -23,11 +23,11 @@ public class WarehouseBreakages {
         this.date = date;
     }
 
-    public float getWarehouseBreakages() {
-        return warehouseBreakages;
+    public float getCrownYield() {
+        return crownYield;
     }
 
-    public void setWarehouseBreakages(float warehouseBreakages) {
-        this.warehouseBreakages = warehouseBreakages;
+    public void setCrownYield(float crownYield) {
+        this.crownYield = crownYield;
     }
 }

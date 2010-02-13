@@ -4,12 +4,12 @@
         "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
 
 <hibernate-mapping package="com.technotrix.pepsi.domainObjects">
-    <class name="Power" table="power">
+    <class name="PowerBeverage" table="power_beverage">
         <id name="id" column="id">
             <generator class="increment"/>
         </id>
         <property name="date" column="date"/>
-        <property name="power" column="power"/>
+        <property name="powerBeverage" column="power_beverage"/>
     </class>
 
 </hibernate-mapping>
