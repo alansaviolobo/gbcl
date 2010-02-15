@@ -426,6 +426,12 @@ public class StartPoint implements ActionListener {
             WarehouseProductivity warehouseProductivity;
             FillerDowntime fillerDowntime;
             ProductionProductivity productionProductivity;
+            ConcentrateYield concentrateYield;
+            CrownYield crownYield;
+            SugarYield sugarYield;
+            CO2Yield co2Yield;
+            PowerBeverage powerBeverage;
+            Water water;
             FurnaceOil furnaceOil;
             TotalPaidHours totalPaidHours;
 
@@ -446,57 +452,198 @@ public class StartPoint implements ActionListener {
             for (int count = offset; count > 3; count--, calendar.add(Calendar.DATE, -1)) {
                 try {
                     injuryFrequency = (InjuryFrequency) session.createQuery("from InjuryFrequency where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    lostTime = (LostTime) session.createQuery("from LostTime where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    brix = (Brix) session.createQuery("from Brix where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    ta = (TA) session.createQuery("from TA where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    co2 = (CO2) session.createQuery("from CO2 where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    yeastLog = (YeastLog) session.createQuery("from YeastLog where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    casesNotAvailableToLoad = (CasesNotAvailableToLoad) session.createQuery("from CasesNotAvailableToLoad where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    forecastAccuracy = (ForecastAccuracy) session.createQuery("from ForecastAccuracy where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    materialAvailability = (MaterialAvailability) session.createQuery("from MaterialAvailability where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    scheduleCompliance = (ScheduleCompliance) session.createQuery("from ScheduleCompliance where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    totalPlantWaste = (TotalPlantWaste) session.createQuery("from TotalPlantWaste where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    productionBreakage = (ProductionBreakage) session.createQuery("from ProductionBreakage where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    warehouseBreakage = (WarehouseBreakage) session.createQuery("from WarehouseBreakage where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    ingredientYieldLoss = (IngredientYieldLoss) session.createQuery("from IngredientYieldLoss where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    packagingYieldLoss = (PackagingYieldLoss) session.createQuery("from PackagingYieldLoss where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    finishedGoodsShrinkage = (FinishedGoodsShrinkage) session.createQuery("from FinishedGoodsShrinkage where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    totalPaidHours = (TotalPaidHours) session.createQuery("from TotalPaidHours where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    productionProductivity = (ProductionProductivity) session.createQuery("from ProductionProductivity where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    plantProductivity = new PlantProductivity(productionProductivity, totalPaidHours);
-                    lineProductivity = (LineProductivity) session.createQuery("from LineProductivity where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    warehouseProductivity = (WarehouseProductivity) session.createQuery("from WarehouseProductivity where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    fillerDowntime = (FillerDowntime) session.createQuery("from FillerDowntime where date = :now").setDate("now", calendar.getTime()).list().get(0);
-                    furnaceOil = (FurnaceOil) session.createQuery("from FurnaceOil where date = :now").setDate("now", calendar.getTime()).list().get(0);
-
                     excelSheetWriter.setFloatCellValue(8, count, injuryFrequency.getInjuryFrequency());
-                    excelSheetWriter.setFloatCellValue(9, count, lostTime.getLostTime());
-                    excelSheetWriter.setFloatCellValue(13, count, brix.getBrix());
-                    excelSheetWriter.setFloatCellValue(14, count, ta.getTa());
-                    excelSheetWriter.setFloatCellValue(15, count, co2.getCo2());
-                    excelSheetWriter.setFloatCellValue(16, count, yeastLog.getYeastLog());
-                    excelSheetWriter.setFloatCellValue(20, count, casesNotAvailableToLoad.getCasesNotAvailableToLoad());
-                    excelSheetWriter.setFloatCellValue(21, count, forecastAccuracy.getForcastAccuracy());
-                    excelSheetWriter.setFloatCellValue(22, count, scheduleCompliance.getScheduleCompliance());
-                    excelSheetWriter.setFloatCellValue(23, count, materialAvailability.getMaterialAvailability());
-                    excelSheetWriter.setFloatCellValue(24, count, forecastAccuracy.getGoodForecast());
-                    excelSheetWriter.setFloatCellValue(28, count, totalPlantWaste.getTotalPlantWaste());
-                    excelSheetWriter.setFloatCellValue(29, count, productionBreakage.getProductionBreakage());
-                    excelSheetWriter.setFloatCellValue(30, count, warehouseBreakage.getWarehouseBreakages());
-                    excelSheetWriter.setFloatCellValue(31, count, ingredientYieldLoss.getIngredientYieldLoss());
-                    excelSheetWriter.setFloatCellValue(32, count, packagingYieldLoss.getPackagingYieldLoss());
-                    excelSheetWriter.setFloatCellValue(33, count, finishedGoodsShrinkage.getFinishedGoodsShrinkage());
-                    excelSheetWriter.setFloatCellValue(36, count, plantProductivity.getProductionProductivity());
-                    excelSheetWriter.setFloatCellValue(37, count, lineProductivity.getLineProductivity());
-                    excelSheetWriter.setFloatCellValue(38, count, warehouseProductivity.getCasesPerEmployeeHour());
-                    excelSheetWriter.setFloatCellValue(39, count, fillerDowntime.getFillerDowntime());
-                    excelSheetWriter.setFloatCellValue(40, count, plantProductivity.getProductionProductivity());
-                    excelSheetWriter.setFloatCellValue(44, count, furnaceOil.getFurnaceOil());
-
-                    appendStatus("Retrieving data for " + sdf.format(calendar.getTime()) + "...OK");
                 } catch (Exception e) {
-                    appendStatus("Retrieving data for " + sdf.format(calendar.getTime()) + "...FAILED");
+                    appendStatus("Retrieving Injury Frequency for " + sdf.format(calendar.getTime()) + "...FAILED");
                 }
+
+                try {
+                    lostTime = (LostTime) session.createQuery("from LostTime where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(9, count, lostTime.getLostTime());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Lost Time for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    brix = (Brix) session.createQuery("from Brix where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(13, count, brix.getBrix());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Brix for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    ta = (TA) session.createQuery("from TA where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(14, count, ta.getTa());
+                } catch (Exception e) {
+                    appendStatus("Retrieving TA for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    co2 = (CO2) session.createQuery("from CO2 where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(15, count, co2.getCo2());
+                } catch (Exception e) {
+                    appendStatus("Retrieving CO2 for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    yeastLog = (YeastLog) session.createQuery("from YeastLog where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(16, count, yeastLog.getYeastLog());
+                } catch (Exception e) {
+                    appendStatus("Retrieving YeastLog for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    casesNotAvailableToLoad = (CasesNotAvailableToLoad) session.createQuery("from CasesNotAvailableToLoad where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(20, count, casesNotAvailableToLoad.getCasesNotAvailableToLoad());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Cases Not Available To Load for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    forecastAccuracy = (ForecastAccuracy) session.createQuery("from ForecastAccuracy where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(21, count, forecastAccuracy.getForecastAccuracy());
+                    excelSheetWriter.setFloatCellValue(22, count, forecastAccuracy.getGoodForecast());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Forecast Accuracy for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    materialAvailability = (MaterialAvailability) session.createQuery("from MaterialAvailability where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(23, count, materialAvailability.getMaterialAvailability());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Material Availability for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    scheduleCompliance = (ScheduleCompliance) session.createQuery("from ScheduleCompliance where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(24, count, scheduleCompliance.getScheduleCompliance());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Schedule Compliance for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    totalPlantWaste = (TotalPlantWaste) session.createQuery("from TotalPlantWaste where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(28, count, totalPlantWaste.getTotalPlantWaste());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Total Plant Waste for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    productionBreakage = (ProductionBreakage) session.createQuery("from ProductionBreakage where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(29, count, productionBreakage.getProductionBreakage());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Production Breakage for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    warehouseBreakage = (WarehouseBreakage) session.createQuery("from WarehouseBreakage where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(30, count, warehouseBreakage.getWarehouseBreakage());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Warehouse Breakage for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    ingredientYieldLoss = (IngredientYieldLoss) session.createQuery("from IngredientYieldLoss where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(31, count, ingredientYieldLoss.getIngredientYieldLoss());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Ingredient Yield Loss for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    packagingYieldLoss = (PackagingYieldLoss) session.createQuery("from PackagingYieldLoss where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(32, count, packagingYieldLoss.getPackagingYieldLoss());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Packaging Yield Loss for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    finishedGoodsShrinkage = (FinishedGoodsShrinkage) session.createQuery("from FinishedGoodsShrinkage where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(33, count, finishedGoodsShrinkage.getFinishedGoodsShrinkage());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Finished Goods Shrinkage for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    productionProductivity = (ProductionProductivity) session.createQuery("from ProductionProductivity where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    totalPaidHours = (TotalPaidHours) session.createQuery("from TotalPaidHours where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    plantProductivity = new PlantProductivity(productionProductivity, totalPaidHours);
+                    excelSheetWriter.setFloatCellValue(36, count, plantProductivity.getProductionProductivity());
+                    excelSheetWriter.setFloatCellValue(40, count, plantProductivity.getProductionProductivity());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Production Productivity / Total Paid Hours for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    lineProductivity = (LineProductivity) session.createQuery("from LineProductivity where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(37, count, lineProductivity.getLineProductivity());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Line Productivity for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    warehouseProductivity = (WarehouseProductivity) session.createQuery("from WarehouseProductivity where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(38, count, warehouseProductivity.getCasesPerEmployeeHour());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Warehouse Productivity for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    fillerDowntime = (FillerDowntime) session.createQuery("from FillerDowntime where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(39, count, fillerDowntime.getFillerDowntime());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Filler Downtime for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    concentrateYield = (ConcentrateYield) session.createQuery("from ConcentrateYield where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(44, count, concentrateYield.getConcentrateYield());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Concentrate Yield for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    crownYield = (CrownYield) session.createQuery("from CrownYield where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(44, count, crownYield.getCrownYield());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Crown Yield for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    sugarYield = (SugarYield) session.createQuery("from SugarYield where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(44, count, sugarYield.getSugarYield());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Sugar Yield for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    co2Yield = (CO2Yield) session.createQuery("from CO2Yield where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(44, count, co2Yield.getCo2Yield());
+                } catch (Exception e) {
+                    appendStatus("Retrieving CO2 Yield for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    furnaceOil = (FurnaceOil) session.createQuery("from FurnaceOil where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(44, count, furnaceOil.getFurnaceOil());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Furnace Oil for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    powerBeverage = (PowerBeverage) session.createQuery("from PowerBeverage where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(44, count, powerBeverage.getPowerBeverage());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Power Beverage for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                try {
+                    water = (Water) session.createQuery("from Water where date = :now").setDate("now", calendar.getTime()).list().get(0);
+                    excelSheetWriter.setFloatCellValue(44, count, water.getWater());
+                } catch (Exception e) {
+                    appendStatus("Retrieving Water for " + sdf.format(calendar.getTime()) + "...FAILED");
+                }
+
+                appendStatus("Retrieving data for " + sdf.format(calendar.getTime()) + "...Complete");
             }
             excelSheetWriter.save();
             tx.commit();
