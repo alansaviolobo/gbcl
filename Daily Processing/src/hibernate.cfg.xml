@@ -14,7 +14,12 @@
         <property name="current_session_context_class">thread</property>
         <property name="hibernate.show_sql">true</property>
 
+        <mapping resource="com/technotrix/pepsi/domainObjects/Brix.hbm.xml"/>
         <mapping resource="com/technotrix/pepsi/domainObjects/CasesNotAvailableToLoad.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/CO2.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/CO2Yield.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/ConcentrateYield.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/CrownYield.hbm.xml"/>
         <mapping resource="com/technotrix/pepsi/domainObjects/FillerDowntime.hbm.xml"/>
         <mapping resource="com/technotrix/pepsi/domainObjects/FinishedGoodsShrinkage.hbm.xml"/>
         <mapping resource="com/technotrix/pepsi/domainObjects/ForecastAccuracy.hbm.xml"/>
@@ -23,10 +28,17 @@
         <mapping resource="com/technotrix/pepsi/domainObjects/InjuryFrequency.hbm.xml"/>
         <mapping resource="com/technotrix/pepsi/domainObjects/LineProductivity.hbm.xml"/>
         <mapping resource="com/technotrix/pepsi/domainObjects/LostTime.hbm.xml"/>
-        <mapping resource="com/technotrix/pepsi/domainObjects/Power.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/MaterialAvailability.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/PackagingYieldLoss.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/PowerBeverage.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/ProductionBreakage.hbm.xml"/>
         <mapping resource="com/technotrix/pepsi/domainObjects/ProductionProductivity.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/ScheduleCompliance.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/SugarYield.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/TA.hbm.xml"/>
         <mapping resource="com/technotrix/pepsi/domainObjects/TotalPaidHours.hbm.xml"/>
-        <mapping resource="com/technotrix/pepsi/domainObjects/WarehouseBreakages.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/TotalPlantWaste.hbm.xml"/>
+        <mapping resource="com/technotrix/pepsi/domainObjects/WarehouseBreakage.hbm.xml"/>
         <mapping resource="com/technotrix/pepsi/domainObjects/WarehouseProductivity.hbm.xml"/>
         <mapping resource="com/technotrix/pepsi/domainObjects/Water.hbm.xml"/>
         <mapping resource="com/technotrix/pepsi/domainObjects/YeastLog.hbm.xml"/>

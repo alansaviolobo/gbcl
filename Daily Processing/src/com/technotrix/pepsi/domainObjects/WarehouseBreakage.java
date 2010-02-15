@@ -5,7 +5,7 @@ import java.util.Date;
 public class WarehouseBreakage {
     private int id;
     private Date date;
-    private float warehouseBreakages;
+    private float warehouseBreakage;
 
     public int getId() {
         return id;
@@ -23,11 +23,11 @@ public class WarehouseBreakage {
         this.date = date;
     }
 
-    public float getWarehouseBreakages() {
-        return warehouseBreakages;
+    public float getWarehouseBreakage() {
+        return warehouseBreakage;
     }
 
-    public void setWarehouseBreakages(float warehouseBreakages) {
-        this.warehouseBreakages = warehouseBreakages;
+    public void setWarehouseBreakage(float warehouseBreakage) {
+        this.warehouseBreakage = warehouseBreakage;
     }
 }

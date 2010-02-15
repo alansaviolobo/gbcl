@@ -9,7 +9,7 @@
             <generator class="increment"/>
         </id>
         <property name="date" column="date"/>
-        <property name="concentrateYield" column="concentrateYield"/>
+        <property name="concentrateYield" column="concentrate_yield"/>
     </class>
 
 </hibernate-mapping>

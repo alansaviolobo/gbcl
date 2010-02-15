@@ -14,7 +14,7 @@ public class WarehouseBreakageReader extends BaseParser {
     public WarehouseBreakage parse() throws ParseException {
         WarehouseBreakage warehouseBreakage = new WarehouseBreakage();
         warehouseBreakage.setDate(getDateValueForCell(6, C));
-        warehouseBreakage.setWarehouseBreakages(getFloatValueForCell(0, A));
+        warehouseBreakage.setWarehouseBreakage(getFloatValueForCell(0, A));
         return warehouseBreakage;
     }
 }

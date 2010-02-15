@@ -5,7 +5,7 @@ import java.util.Date;
 public class ForecastAccuracy {
     private int id;
     private Date date;
-    private float forcastAccuracy;
+    private float forecastAccuracy;
     private float goodForecast;
 
     public int getId() {
@@ -24,12 +24,12 @@ public class ForecastAccuracy {
         this.date = date;
     }
 
-    public float getForcastAccuracy() {
-        return forcastAccuracy;
+    public float getForecastAccuracy() {
+        return forecastAccuracy;
     }
 
-    public void setForcastAccuracy(float forcastAccuracy) {
-        this.forcastAccuracy = forcastAccuracy;
+    public void setForecastAccuracy(float forecastAccuracy) {
+        this.forecastAccuracy = forecastAccuracy;
     }
 
     public float getGoodForecast() {

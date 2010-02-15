@@ -198,10 +198,10 @@ create table total_plant_waste(
     unique key (date)
 );
 
-create table warehouse_breakages(
+create table warehouse_breakage(
     id int unsigned not null,
     date date not null,
-    warehouse_breakages float not null,
+    warehouse_breakage float not null,
     primary key (id),
     unique key (date)
 );

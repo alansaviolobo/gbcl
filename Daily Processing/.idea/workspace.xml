@@ -5,56 +5,19 @@
   </component>
   <component name="ChangeListManager" verified="true">
     <list default="true" readonly="true" id="7b3a2ba2-f8eb-46e9-a677-d1f8030e7649" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/CO2YieldReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/CO2Yield.hbm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/Brix.hbm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/PowerBeverage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/CrownYield.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/TotalPlantWaste.hbm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ProductionBreakage.hbm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/TA.java" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\Administrator\Desktop\workspace\pepsi\Daily Processing\src\com\technotrix\pepsi\dataParsers\WarehouseBreakagesReader.java" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/WarehouseBreakageReader.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/WaterReader.java" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/WaterReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ProductionBreakage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ConcentrateYield.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/technotrix/pepsi/StartPoint.java" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/StartPoint.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/MaterialAvailability.hbm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/SugarYield.hbm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/MaterialAvailability.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/CO2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/CO2Yield.java" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\Administrator\Desktop\workspace\pepsi\Daily Processing\src\com\technotrix\pepsi\domainObjects\Power.hbm.xml" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/PowerBeverage.hbm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/PackagingYieldLossReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/SugarYieldReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/SugarYield.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/Brix.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/CrownYieldReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ScheduleCompliance.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/TotalPlantWaste.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/TotalPlantWasteReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/CrownYield.hbm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/PackagingYieldLoss.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/PackagingYieldLoss.hbm.xml" />
-      <change type="MOVED" beforePath="C:\Documents and Settings\Administrator\Desktop\workspace\pepsi\Daily Processing\src\com\technotrix\pepsi\domainObjects\WarehouseBreakages.java" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/WarehouseBreakage.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/CO2.hbm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ScheduleCompliance.hbm.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/BrixReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ConcentrateYield.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/TAReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/TA.hbm.xml" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\Administrator\Desktop\workspace\pepsi\Daily Processing\src\com\technotrix\pepsi\domainObjects\Power.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/ForecastAccuracyReader.java" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/ForecastAccuracyReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ConcentrateYield.hbm.xml" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ConcentrateYield.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/WarehouseBreakage.java" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/WarehouseBreakage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/hibernate.cfg.xml" afterPath="$PROJECT_DIR$/src/hibernate.cfg.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/WarehouseBreakageReader.java" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/WarehouseBreakageReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/FurnaceOil.hbm.xml" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/FurnaceOil.hbm.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Setup/setup.sql" afterPath="$PROJECT_DIR$/Setup/setup.sql" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/MaterialAvailabilityReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/PowerBeverageReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/CO2Reader.java" />
-      <change type="DELETED" beforePath="C:\Documents and Settings\Administrator\Desktop\workspace\pepsi\Daily Processing\src\com\technotrix\pepsi\dataParsers\PowerReader.java" afterPath="" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/ConcentrateYieldReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/ScheduleComplianceReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/ProductionBreakageReader.java" />
+      <change type="MOVED" beforePath="C:\Documents and Settings\Administrator\Desktop\workspace\pepsi\Daily Processing\src\com\technotrix\pepsi\domainObjects\WarehouseBreakages.hbm.xml" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/WarehouseBreakage.hbm.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ForecastAccuracy.java" afterPath="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ForecastAccuracy.java" />
     </list>
-    <ignored path=".idea/workspace.xml" />
     <ignored path="ExcelReder.iws" />
+    <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,54 +79,39 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BrixReader.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/BrixReader.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="41" selection-start="425" selection-end="426" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="StartPoint.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="StartPoint.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/StartPoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="494" column="0" selection-start="27222" selection-end="27222" vertical-scroll-proportion="0.0">
+            <state line="55" column="11" selection-start="2152" selection-end="2152" vertical-scroll-proportion="0.7407407">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#downloadFile#0;class#StartPoint#0" expanded="false" />
-                <element signature="method#collectData#0;class#StartPoint#0" expanded="false" />
-                <element signature="method#ProgressDisplay#0;class#StartPoint#0" expanded="false" />
-                <element signature="method#actionPerformed#0;class#StartPoint#0" expanded="false" />
-                <element signature="class#MainPanel#0" expanded="false" />
-                <element signature="class#AboutPanel#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CO2Yield.hbm.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/CO2Yield.hbm.xml">
+      <file leaf-file-name="setup.sql" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Setup/setup.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="9" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
+            <state line="73" column="80" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Brix.hbm.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/Brix.hbm.xml">
+      <file leaf-file-name="FurnaceOil.hbm.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/FurnaceOil.hbm.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="3" column="9" selection-start="136" selection-end="136" vertical-scroll-proportion="0.08346972">
+            <state line="6" column="45" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CasesNotAvailableToLoadReader.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/CasesNotAvailableToLoadReader.java">
+      <file leaf-file-name="ConcentrateYield.hbm.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ConcentrateYield.hbm.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="13" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
+            <state line="11" column="63" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -179,12 +127,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/Brix.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/CO2.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/CO2Yield.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ConcentrateYield.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/CrownYield.hbm.xml" />
-        <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/MaterialAvailability.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/PackagingYieldLoss.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/PowerBeverage.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ProductionBreakage.hbm.xml" />
@@ -192,8 +134,14 @@
         <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/SugarYield.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/TA.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/TotalPlantWaste.hbm.xml" />
-        <option value="$PROJECT_DIR$/Setup/setup.sql" />
         <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/BrixReader.java" />
+        <option value="$PROJECT_DIR$/src/hibernate.cfg.xml" />
+        <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/WarehouseBreakages.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ForecastAccuracy.java" />
+        <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/WarehouseBreakage.java" />
+        <option value="$PROJECT_DIR$/Setup/setup.sql" />
+        <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ConcentrateYield.hbm.xml" />
+        <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/FurnaceOil.hbm.xml" />
         <option value="$PROJECT_DIR$/src/com/technotrix/pepsi/StartPoint.java" />
       </list>
     </option>
@@ -239,7 +187,6 @@
       <pane id="Scope">
         <subPane subId="Problems" />
       </pane>
-      <pane id="Favorites" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -270,28 +217,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Daily Processing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Daily Processing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pepsi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="StartPoint.java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -344,28 +269,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pepsi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dataParsers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Daily Processing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Daily Processing" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="Setup" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -375,6 +278,7 @@
       <pane id="PackagesPane">
         <subPane />
       </pane>
+      <pane id="Favorites" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -392,9 +296,9 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -618,10 +522,10 @@
     <frame x="-4" y="-4" width="1288" height="755" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32967034" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959743" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265306" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959743" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3987441" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32838285" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32025117" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -629,7 +533,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18509616" sideWeight="0.33873874" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295082" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23052464" sideWeight="0.6687598" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22972973" sideWeight="0.67974883" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30926216" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -649,7 +553,7 @@
     <option name="PERFORM_ROLLBACK_IN_BACKGROUND" value="false" />
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="added parsers and domain objects for the remaining kpi units." />
+    <option name="LAST_COMMIT_MESSAGE" value="typo corrections when testing." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -664,6 +568,7 @@
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
     <MESSAGE value="added a swing UI to the kpm generator component and separated the report generation from the data collection." />
     <MESSAGE value="added parsers and domain objects for the remaining kpi units." />
+    <MESSAGE value="typo corrections when testing." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -673,123 +578,109 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/PowerBeverage.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="61" selection-start="518" selection-end="518" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ProductionBreakage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/TotalPlantWaste.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/TA.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="38" selection-start="472" selection-end="472" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/SugarYield.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="485" selection-end="485" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ScheduleCompliance.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="71" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ProductionBreakage.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="71" selection-start="538" selection-end="538" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/PlantProductivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="13" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/PackagingYieldLoss.hbm.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="72" selection-start="540" selection-end="540" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/MaterialAvailability.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="44" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="11" column="44" selection-start="515" selection-end="515" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Setup/setup.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="14" selection-start="0" selection-end="4931" vertical-scroll-proportion="0.38952535">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/CasesNotAvailableToLoadReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/BrixReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="41" selection-start="425" selection-end="426" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/StartPoint.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="494" column="0" selection-start="27222" selection-end="27222" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#downloadFile#0;class#StartPoint#0" expanded="false" />
-            <element signature="method#collectData#0;class#StartPoint#0" expanded="false" />
-            <element signature="method#ProgressDisplay#0;class#StartPoint#0" expanded="false" />
-            <element signature="method#actionPerformed#0;class#StartPoint#0" expanded="false" />
-            <element signature="class#MainPanel#0" expanded="false" />
-            <element signature="class#AboutPanel#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/CO2Yield.hbm.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/Brix.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="3" column="9" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/Brix.hbm.xml">
+    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/CO2Yield.hbm.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="9" selection-start="136" selection-end="136" vertical-scroll-proportion="0.08346972">
+        <state line="3" column="9" selection-start="136" selection-end="136" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/CasesNotAvailableToLoadReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="13" selection-start="207" selection-end="207" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/dataParsers/BrixReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="41" selection-start="425" selection-end="426" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/WarehouseBreakage.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="69" selection-start="534" selection-end="534" vertical-scroll-proportion="0.30605564">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/WarehouseBreakage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="33" selection-start="178" selection-end="178" vertical-scroll-proportion="0.29238328">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/hibernate.cfg.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="77" selection-start="1661" selection-end="1661" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ForecastAccuracy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="25" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ForecastAccuracy.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="59" selection-start="305" selection-end="322" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/CasesNotAvailableToLoad.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/CO2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="13" selection-start="82" selection-end="82" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/ConcentrateYield.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="63" selection-start="526" selection-end="526" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/domainObjects/FurnaceOil.hbm.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="45" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Setup/setup.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="80" selection-start="1614" selection-end="1614" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/technotrix/pepsi/StartPoint.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="55" column="11" selection-start="2152" selection-end="2152" vertical-scroll-proportion="0.7407407">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
