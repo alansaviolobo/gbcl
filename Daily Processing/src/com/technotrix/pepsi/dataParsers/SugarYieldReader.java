@@ -12,7 +12,7 @@ public class SugarYieldReader extends BaseParser {
 
     public SugarYield parse() throws ParseException {
         SugarYield sugarYield = new SugarYield();
-        sugarYield.setDate(getDateValueForCell(5, B));
+        sugarYield.setDate(getDateValueForCell(2, C));
         sugarYield.setSugarYield(getFloatValueForCell(0, A));
         return sugarYield;
     }

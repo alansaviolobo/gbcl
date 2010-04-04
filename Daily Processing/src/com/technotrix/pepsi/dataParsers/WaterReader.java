@@ -12,7 +12,7 @@ public class WaterReader extends BaseParser {
 
     public Water parse() throws ParseException {
         Water water = new Water();
-        water.setDate(getDateValueForCell(5, D));
+        water.setDate(getDateValueForCell(2, C));
         water.setWater(getFloatValueForCell(0, A));
         return water;
     }

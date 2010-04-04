@@ -12,7 +12,7 @@ public class InjuryFrequencyReader extends BaseParser {
 
     public InjuryFrequency parse() throws ParseException {
         InjuryFrequency injuryFrequency = new InjuryFrequency();
-        injuryFrequency.setDate(getDateValueForCell(4, D));
+        injuryFrequency.setDate(getDateValueForCell(2, C));
         injuryFrequency.setInjuryFrequency(getFloatValueForCell(0, A));
         return injuryFrequency;
     }

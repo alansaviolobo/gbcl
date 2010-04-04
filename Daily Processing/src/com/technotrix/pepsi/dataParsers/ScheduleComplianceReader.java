@@ -12,7 +12,7 @@ public class ScheduleComplianceReader extends BaseParser {
 
     public ScheduleCompliance parse() throws ParseException {
         ScheduleCompliance scheduleCompliance = new ScheduleCompliance();
-        scheduleCompliance.setDate(getDateValueForCell(5, B));
+        scheduleCompliance.setDate(getDateValueForCell(2, C));
         scheduleCompliance.setScheduleCompliance(getFloatValueForCell(0, A));
         return scheduleCompliance;
     }

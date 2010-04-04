@@ -12,7 +12,7 @@ public class IngredientYieldLossReader extends BaseParser {
 
     public IngredientYieldLoss parse() throws ParseException {
         IngredientYieldLoss ingredientYieldLoss = new IngredientYieldLoss();
-        ingredientYieldLoss.setDate(getDateValueForCell(1, D));
+        ingredientYieldLoss.setDate(getDateValueForCell(2, C));
         ingredientYieldLoss.setIngredientYieldLoss(getFloatValueForCell(0, A));
         return ingredientYieldLoss;
     }

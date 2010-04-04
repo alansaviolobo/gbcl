@@ -12,7 +12,7 @@ public class TAReader extends BaseParser {
 
     public TA parse() throws ParseException {
         TA ta = new TA();
-        ta.setDate(getDateValueForCell(5, B));
+        ta.setDate(getDateValueForCell(2, C));
         ta.setTa(getFloatValueForCell(0, A));
         return ta;
     }

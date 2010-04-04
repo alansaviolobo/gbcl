@@ -12,7 +12,7 @@ public class MaterialAvailabilityReader extends BaseParser {
 
     public MaterialAvailability parse() throws ParseException {
         MaterialAvailability materialAvailability = new MaterialAvailability();
-        materialAvailability.setDate(getDateValueForCell(5, B));
+        materialAvailability.setDate(getDateValueForCell(2, C));
         materialAvailability.setMaterialAvailability(getFloatValueForCell(0, A));
         return materialAvailability;
     }

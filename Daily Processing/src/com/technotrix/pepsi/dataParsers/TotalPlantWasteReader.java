@@ -12,7 +12,7 @@ public class TotalPlantWasteReader extends BaseParser {
 
     public TotalPlantWaste parse() throws ParseException {
         TotalPlantWaste totalPlantWaste = new TotalPlantWaste();
-        totalPlantWaste.setDate(getDateValueForCell(5, B));
+        totalPlantWaste.setDate(getDateValueForCell(2, C));
         totalPlantWaste.setTotalPlantWaste(getFloatValueForCell(0, A));
         return totalPlantWaste;
     }

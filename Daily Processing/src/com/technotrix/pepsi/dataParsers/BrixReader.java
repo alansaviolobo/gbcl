@@ -12,7 +12,7 @@ public class BrixReader extends BaseParser {
 
     public Brix parse() throws ParseException {
         Brix brix = new Brix();
-        brix.setDate(getDateValueForCell(7, C));
+        brix.setDate(getDateValueForCell(2, C));
         brix.setBrix(getFloatValueForCell(0, A));
         return brix;
     }

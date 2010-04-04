@@ -13,7 +13,7 @@ public class LineProductivityReader extends BaseParser {
 
     public LineProductivity parse() throws ParseException {
         LineProductivity lineProductivity = new LineProductivity();
-        lineProductivity.setDate(getDateValueForCell(4, C));
+        lineProductivity.setDate(getDateValueForCell(2, C));
         lineProductivity.setLineProductivity(getFloatValueForCell(0, A));
         return lineProductivity;
     }

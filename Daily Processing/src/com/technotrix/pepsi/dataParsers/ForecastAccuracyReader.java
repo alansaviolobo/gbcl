@@ -12,7 +12,7 @@ public class ForecastAccuracyReader extends BaseParser {
 
     public ForecastAccuracy parse() throws ParseException {
         ForecastAccuracy forecastAccuracy = new ForecastAccuracy();
-        forecastAccuracy.setDate(getDateValueForCell(5, D));
+        forecastAccuracy.setDate(getDateValueForCell(2, C));
         forecastAccuracy.setForecastAccuracy(getFloatValueForCell(0, A));
         forecastAccuracy.setGoodForecast(getFloatValueForCell(1, A));
         return forecastAccuracy;

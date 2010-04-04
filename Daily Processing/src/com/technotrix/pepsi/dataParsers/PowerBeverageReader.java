@@ -12,7 +12,7 @@ public class PowerBeverageReader extends BaseParser {
 
     public PowerBeverage parse() throws ParseException {
         PowerBeverage powerBeverage = new PowerBeverage();
-        powerBeverage.setDate(getDateValueForCell(1, A));
+        powerBeverage.setDate(getDateValueForCell(2, C));
         powerBeverage.setPowerBeverage(getFloatValueForCell(1, A));
         return powerBeverage;
     }

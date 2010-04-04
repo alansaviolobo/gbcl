@@ -12,7 +12,7 @@ public class LostTimeReader extends BaseParser {
 
     public LostTime parse() throws ParseException {
         LostTime lostTime = new LostTime();
-        lostTime.setDate(getDateValueForCell(4, D));
+        lostTime.setDate(getDateValueForCell(2, C));
         lostTime.setLostTime(getFloatValueForCell(0, A));
         return lostTime;
     }

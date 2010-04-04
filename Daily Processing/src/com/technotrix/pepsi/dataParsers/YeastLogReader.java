@@ -12,7 +12,7 @@ public class YeastLogReader extends BaseParser {
 
     public YeastLog parse() throws ParseException {
         YeastLog yeastLog = new YeastLog();
-        yeastLog.setDate(getDateValueForCell(5, D));
+        yeastLog.setDate(getDateValueForCell(2, C));
         yeastLog.setYeastLog(getFloatValueForCell(0, A));
         return yeastLog;
     }

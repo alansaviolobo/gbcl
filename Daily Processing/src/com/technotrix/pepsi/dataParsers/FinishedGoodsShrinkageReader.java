@@ -13,7 +13,7 @@ public class FinishedGoodsShrinkageReader extends BaseParser {
 
     public FinishedGoodsShrinkage parse() throws ParseException {
         FinishedGoodsShrinkage finishedGoodsShrinkage = new FinishedGoodsShrinkage();
-        finishedGoodsShrinkage.setDate(getDateValueForCell(5, C));
+        finishedGoodsShrinkage.setDate(getDateValueForCell(2, C));
         finishedGoodsShrinkage.setFinishedGoodsShrinkage(getIntegerValueForCell(0, A));
         return finishedGoodsShrinkage;
     }

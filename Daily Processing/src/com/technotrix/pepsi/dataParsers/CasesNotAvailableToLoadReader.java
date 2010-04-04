@@ -13,7 +13,7 @@ public class CasesNotAvailableToLoadReader extends BaseParser {
 
     public CasesNotAvailableToLoad parse() throws ParseException {
         CasesNotAvailableToLoad casesNotAvailableToLoad = new CasesNotAvailableToLoad();
-        casesNotAvailableToLoad.setDate(getDateValueForCell(6, C));
+        casesNotAvailableToLoad.setDate(getDateValueForCell(2, C));
         casesNotAvailableToLoad.setCasesNotAvailableToLoad(getFloatValueForCell(0, A));
         return casesNotAvailableToLoad;
     }

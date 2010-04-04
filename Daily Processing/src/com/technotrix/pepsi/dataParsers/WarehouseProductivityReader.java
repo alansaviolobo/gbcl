@@ -13,7 +13,7 @@ public class WarehouseProductivityReader extends BaseParser {
 
     public WarehouseProductivity parse() throws ParseException {
         WarehouseProductivity warehouseProductivity = new WarehouseProductivity();
-        warehouseProductivity.setDate(getDateValueForCell(5, D));
+        warehouseProductivity.setDate(getDateValueForCell(2, C));
         warehouseProductivity.setCasesPerEmployeeHour(getFloatValueForCell(0, A));
         return warehouseProductivity;
     }

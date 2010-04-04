@@ -12,7 +12,7 @@ public class CO2Reader extends BaseParser {
 
     public CO2 parse() throws ParseException {
         CO2 cO2 = new CO2();
-        cO2.setDate(getDateValueForCell(5, B));
+        cO2.setDate(getDateValueForCell(2, C));
         cO2.setCo2(getFloatValueForCell(0, A));
         return cO2;
     }

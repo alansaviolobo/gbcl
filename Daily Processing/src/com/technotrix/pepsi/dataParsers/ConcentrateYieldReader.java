@@ -12,7 +12,7 @@ public class ConcentrateYieldReader extends BaseParser {
 
     public ConcentrateYield parse() throws ParseException {
         ConcentrateYield concentrateYield = new ConcentrateYield();
-        concentrateYield.setDate(getDateValueForCell(5, C));
+        concentrateYield.setDate(getDateValueForCell(2, C));
         concentrateYield.setConcentrateYield(getFloatValueForCell(0, A));
         return concentrateYield;
     }

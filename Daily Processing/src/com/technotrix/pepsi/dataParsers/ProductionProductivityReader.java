@@ -13,9 +13,9 @@ public class ProductionProductivityReader extends BaseParser {
 
     public ProductionProductivity parse() throws ParseException {
         ProductionProductivity productionProductivity = new ProductionProductivity();
-        productionProductivity.setDate(getDateValueForCell(3, C));
-        productionProductivity.setGrossProduction(getFloatValueForCell(8, B));
-        productionProductivity.setCasesPerEmployeeHour(getFloatValueForCell(0, A));
+        productionProductivity.setDate(getDateValueForCell(2, C));
+        productionProductivity.setGrossProduction(getFloatValueForCell(0, A));
+        productionProductivity.setCasesPerEmployeeHour(getFloatValueForCell(1, A));
         return productionProductivity;
     }
 

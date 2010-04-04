@@ -12,7 +12,7 @@ public class FurnaceOilReader extends BaseParser {
 
     public FurnaceOil parse() throws ParseException {
         FurnaceOil furnaceOil = new FurnaceOil();
-        furnaceOil.setDate(getDateValueForCell(5, D));
+        furnaceOil.setDate(getDateValueForCell(2, C));
         furnaceOil.setFurnaceOil(getFloatValueForCell(0, A));
         return furnaceOil;
     }

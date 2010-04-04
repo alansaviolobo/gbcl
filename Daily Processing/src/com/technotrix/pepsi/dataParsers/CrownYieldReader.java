@@ -12,7 +12,7 @@ public class CrownYieldReader extends BaseParser {
 
     public CrownYield parse() throws ParseException {
         CrownYield crownYield = new CrownYield();
-        crownYield.setDate(getDateValueForCell(5, B));
+        crownYield.setDate(getDateValueForCell(2, C));
         crownYield.setCrownYield(getFloatValueForCell(0, A));
         return crownYield;
     }

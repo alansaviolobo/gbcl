@@ -13,7 +13,7 @@ public class TotalPaidHoursReader extends BaseParser {
 
     public TotalPaidHours parse() throws ParseException {
         TotalPaidHours totalPaidHours = new TotalPaidHours();
-        totalPaidHours.setDate(getDateValueForCell(4, C));
+        totalPaidHours.setDate(getDateValueForCell(2, C));
         totalPaidHours.setTotalPaidHours(getFloatValueForCell(0, A));
         return totalPaidHours;
     }

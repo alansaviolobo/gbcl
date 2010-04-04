@@ -12,7 +12,7 @@ public class ProductionBreakageReader extends BaseParser {
 
     public ProductionBreakage parse() throws ParseException {
         ProductionBreakage productionBreakage = new ProductionBreakage();
-        productionBreakage.setDate(getDateValueForCell(5, B));
+        productionBreakage.setDate(getDateValueForCell(2, C));
         productionBreakage.setProductionBreakage(getFloatValueForCell(0, A));
         return productionBreakage;
     }
